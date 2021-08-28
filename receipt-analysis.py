@@ -5,7 +5,6 @@ import time
 import os
 
 REQUEST_URL = os.environ['REQUEST_URL']
-REQUEST_RESULT_BASE = os.environ['REQUEST_URL_KEY']
 KEY = os.environ['REQUEST_KEY'] 
 
 
@@ -77,6 +76,8 @@ if __name__ == '__main__':
           print('Waiting...')
      
      print('Results Loaded')
-
-
+     with open('azure-results.json', 'w') as out:
+          out.write(json.dumps(loaded, indent=2))
+          out.flush()
+          out.close()
      
