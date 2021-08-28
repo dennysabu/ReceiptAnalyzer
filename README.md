@@ -1,7 +1,7 @@
 # Receipt Analyzer
 
 
-This was a quick experiment I threw together to test the output of Azure Cognitive Services specifically with receipts. 
+This was a quick experiment I threw together to test the output of Azure Cognitive Services specifically with restaurant receipts. 
 
 
 ## Prerequisites
